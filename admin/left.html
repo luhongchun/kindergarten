@@ -1,0 +1,94 @@
+<!-- 本页面涉及的js函数，都在head.jsp页面中     -->
+<div id="sidebar" class="sidebar">
+	<script type="text/javascript">
+		try {
+			ace.settings.check('sidebar', 'fixed')
+		} catch (e) {}
+	</script>
+	<div id="sidebar-shortcuts" class="sidebar-shortcuts">
+		<div id="sidebar-shortcuts-large" class="sidebar-shortcuts-large">
+			<button class="btn btn-success" title="切换菜单">
+				<i class="icon-pencil"></i>
+			</button>
+			<button class="btn btn-info" title="UI实例" onclick="window.open('#');">
+				<i class="icon-eye-open"></i>
+			</button>
+			<button class="btn btn-warning" title="数据字典" id="adminzidian" onclick="zidian();">
+				<i class="icon-book"></i>
+			</button>
+			<button class="btn btn-danger" title="菜单管理" id="adminmenu" onclick="menu();">
+				<i class="icon-folder-open"></i>
+			</button>
+		</div>
+	</div>
+	<!-- #sidebar-shortcuts -->
+	<ul class="nav nav-list">
+		<li id="lm1" class="active">
+			<a href="#" class="dropdown-toggle">
+				<i class="icon-desktop"></i> <span>信息发布</span> <b class="arrow icon-angle-down"></b>
+			</a>
+			<ul class="submenu">
+				<li id="z1"><a href="../department/tomain.do" target="mainFrame"><i class="icon-double-angle-right"></i>汶口古镇</a></li>
+
+				<li id="z5"><a href="../dwkxlws/tomain.do" target="mainFrame"><i class="icon-double-angle-right"></i>乡里汶舍</a></li>
+
+				<li id="z4"><a href="../dwkxlws/tomain.do" target="mainFrame"><i class="icon-double-angle-right"></i>汶口生活</a></li>
+
+				<li id="z6"><a href="../dwkxlws/tomain.do" target="mainFrame"><i class="icon-double-angle-right"></i>乡里一聚</a></li>
+
+				<li id="z7"><a href="../dwkxlws/tomain.do" target="mainFrame"><i class="icon-double-angle-right"></i>品牌介绍</a></li>
+
+				<li id="z8"><a href="../dwkxlws/tomain.do" target="mainFrame"><i class="icon-double-angle-right"></i>古镇资讯</a></li>
+			</ul>
+		</li>
+
+		<li id="lm2">
+			<a href="#" class="dropdown-toggle"> <i class="icon-desktop"></i> <span>酒店订单管理</span> <b class="arrow icon-angle-down"></b>
+			</a>
+			<ul class="submenu">
+				<li id="z2"><a href="<%=basePathl%>role.do" target="mainFrame"><i
+						class="icon-double-angle-right"></i>庭院价格状态设置</a></li>
+
+				<li id="z5"><a href="<%=basePathl%>user/listUsers.do" target="mainFrame"><i class="icon-double-angle-right"></i>庭院预订审核入住</a></li>
+			</ul>
+		</li>
+
+		<li id="lm3">
+			<a href="#" class="dropdown-toggle"> <i class="icon-desktop"></i> <span>活动预约管理</span> <b class="arrow icon-angle-down"></b>
+			</a>
+			<ul class="submenu">
+				<li id="z2"><a href="<%=basePathl%>role.do" target="mainFrame"><i
+						class="icon-double-angle-right"></i>社群管理</a></li>
+
+				<li id="z5"><a href="<%=basePathl%>user/listUsers.do" target="mainFrame"><i class="icon-double-angle-right"></i>活动发布</a></li>
+			</ul>
+		</li>
+
+		<li id="lm4">
+			<a href="#" class="dropdown-toggle"> <i class="icon-desktop"></i> <span>基本信息</span> <b class="arrow icon-angle-down"></b>
+			</a>
+			<ul class="submenu">
+				<li id="z2"><a href="../employee/tomain.do" target="mainFrame"><i
+						class="icon-double-angle-right"></i>用户管理</a></li>
+
+				<li id="z5"><a href="<%=basePathl%>user/listUsers.do" target="mainFrame"><i class="icon-double-angle-right"></i>用户注册统计</a></li>
+
+				<li id="z2"><a href="<%=basePathl%>role.do" target="mainFrame"><i
+						class="icon-double-angle-right"></i>浏览访问统计</a></li>
+
+				<li id="z5"><a href="<%=basePathl%>user/listUsers.do" target="mainFrame"><i class="icon-double-angle-right"></i>短信设置</a></li>
+			</ul>
+		</li>
+	</ul>
+	<!--/.nav-list-->
+	<!-- 收缩按钮 -->
+	<div class="sidebar-collapse" id="sidebar-collapse">
+		<i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"> </i>
+	</div>
+	<script type="text/javascript">
+		try {
+			ace.settings.check('sidebar', 'collapsed')
+		} catch (e) {}
+	</script>
+</div>
+<!--/#sidebar-->
